@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         img = (ImageButton)findViewById(R.id.imageButton1);
         imageSwitcher = (ImageSwitcher)findViewById(R.id.imageSwitcher1);
         imageSwitcher.setFactory(new ViewSwitcher.ViewFactory() {
